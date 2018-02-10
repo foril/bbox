@@ -4,7 +4,7 @@
 Bbox is a Go library for Kannel SMS Gateway Box protocol
 *(Based on Kannel 1.4.4)*
 
-Create your own "Custom BOX" for send SMS with Kannel Bearerbox
+Create your own "Custom BOX" for send and receive SMS with Kannel Bearerbox
 
 ### Install
 ```
@@ -89,7 +89,7 @@ case bbox.Mo:
   // Do stuff
 
   // Write Ack response
-  bb.Write(&bbox.Ack{bbox.Success, s.Time, s.Id})
+  bb.Write(&bbox.Ack{bbox.Success, sms.Time, sms.Id})
 
 // DLR received => dlr-mask on sent message
 case bbox.Report_mo:
@@ -98,6 +98,6 @@ case bbox.Report_mo:
   // Do stuff
 
   // Write Ack response
-  bb.Write(&bbox.Ack{bbox.Success, s.Time, s.Id})
+  bb.Write(&bbox.Ack{bbox.Success, sms.Time, sms.Id})
 }
 ```
