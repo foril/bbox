@@ -24,7 +24,7 @@ if err != nil {
   panic(fmt.Sprint(err))
 }
 
-// Maintain persistent connection with for
+// Maintain persistent connection
 for {
   msg, err := bb.Read()
   
