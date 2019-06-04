@@ -108,3 +108,6 @@ case bbox.Report_mo:
   bb.Write(&bbox.Ack{bbox.Success, sms.Time, sms.Id})
 }
 ```
+
+## You have built an custom box [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/foril/bbox/issues)
+Feel free to contribute.
